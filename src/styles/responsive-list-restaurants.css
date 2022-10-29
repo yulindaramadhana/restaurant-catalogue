@@ -1,0 +1,27 @@
+  @media screen and (min-width: 650px) {
+    restaurant-list {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .card-restaurant {
+      height: 100%;
+    }
+  }
+
+  @media screen and (min-width: 850px) {
+    restaurant-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    restaurant-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    restaurant-list {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }

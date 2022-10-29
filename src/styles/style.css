@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+@import url('../styles/style-list-restaurants.css');
+@import url('../styles/style-detail-restaurant.css');
+@import url('../styles/style-button-like.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skip-link {
+    background-color: #8B712D;
+    left: 0;
+    top: 5%;
+    position: absolute;
+    transform: translateX(-100%);
+    color: white;
+    padding: 10px;
+    z-index: 999;
+}
+
+.skip-link:hover{
+    cursor: pointer;
+}
+
+.skip-link:focus {
+    transform: translateX(0%);
+    z-index: 999;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 100vh;
+    color: #2F4858;
+    /* background-color: #eeb986; */
+    background-color: #ffe0c2;
+    position: relative;
+}
+
+nav {
+    padding: 5px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    height: 58px;
+}
+
+nav .list-nav {
+    /* display: none; */
+    transition: all 0.3s;
+    overflow: hidden;
+    background-color: #eeb986;
+    margin-left: -15px;
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+    left: -70%;
+    width: 70%;
+    height: 100vh;
+    z-index: 99;
+}
+
+nav .list-nav.open {
+    left: 15px;
+}
+
+nav .list-nav li {
+    padding: 8px;
+    list-style-type: none;
+}
+
+nav .list-nav li a {
+    text-decoration: none;
+    color: #2F4858;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+nav .nav-logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #211408;
+}
+
+.nav-home .nav-logo {
+    color: white !important;
+}
+
+.nav-transparent {
+    background-color: transparent !important;
+}
+
+.nav-colored {
+    background-color: #211408 !important;
+}
+
+.nav-detail {
+    background-color: #ffe0c2 !important;
+}
+
+.hero-image {
+    margin-top: -58px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../public/images/heros/hero-image_5.jpg');
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image__title {
+    width: 75%;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-image__title #welcome-text {
+    color: white;
+}
+
+.hero-image__title #btn-show-more {
+    background-color: #6f4b29;
+    color: white;
+    height: 3rem;
+    width: 9rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 0 5px #211408;
+}
+
+.hero-image__title #btn-show-more:hover {
+    cursor: pointer;
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding-bottom: 3px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #6f4b29;
+    color: white;
+    font-weight: 900;
+    box-shadow: 0 0 5px #211408;
+}
+
+.content {
+    padding: 15px 30px;
+}
+
+footer {
+    padding: 30px;
+    height: 78px;
+    font-weight: 500;
+    font-size: 22px;
+    color: #bda38b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

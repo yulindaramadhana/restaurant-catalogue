@@ -1,0 +1,49 @@
+@media only screen and (min-width: 689px) {
+    .restaurant-detail-content {
+        flex: 2;
+    }
+
+    .restaurant-detail-container {
+        flex-direction: row;
+    }
+
+    restaurant-detail-image {
+        flex: 1;
+    }
+
+    .card-review__body {
+        width: 30rem;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-height: 1000px) {
+    .card-review__body {
+        width: 30rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-height: 1000px) {
+    .card-review__body {
+        width: 40rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-height: 1000px) {
+    .card-review__body {
+        width: 50rem;
+    }
+}
+
+/* min-width */
+
+@media only screen and (min-width: 350px) and (max-width: 390px) and (min-height: 800px) {
+    .card-review__body {
+        width: 20rem;
+    }
+}
+
+@media only screen and (min-width: 340px) and (max-width: 449px) and (min-height: 800px) {
+    .card-review__body {
+        width: 20rem;
+    }
+}

@@ -1,0 +1,39 @@
+
+.content__heading{
+    padding: 15px 0px;
+}
+
+restaurant-list{
+    display: grid;
+    gap: 15px;
+}
+
+.card-restaurant{
+    background-color: white;
+    border-radius: 25px;
+    padding: 0px;
+    position: relative;
+}
+
+.card-restaurant__image>img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.card-restaurant__body{
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 15px  15px 25px 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #2F4858;
+}
+
+.card-restaurant__headline{
+    display: flex;
+    justify-content: space-between;
+}
